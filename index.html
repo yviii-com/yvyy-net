@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://www.yvyy.net/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站工具游戏集</title>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #4895ef;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --background-overlay: rgba(255, 255, 255, 0.92); /* 半透明遮罩 */
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: url('https://api.yviii.com/bing/uhd.php') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        /* 添加背景遮罩层 */
+        .page-container {
+            background-color: var(--background-overlay);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: var(--dark-color);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            width: fit-content;
+            margin-left: 20px;
+        }
+        
+        .tools-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+        
+        .tool-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        }
+        
+        .tool-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .tool-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .tool-desc {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+            min-height: 40px;
+        }
+        
+        .tool-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            width: 80%;
+        }
+        
+        .tool-btn:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 1024px) {
+            .tools-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .tools-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .tools-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            .section-title {
+                margin-left: 0;
+                font-size: 1.5rem;
+            }
+            .tools-container {
+                padding: 0 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./files/all.min.css">
+</head>
+<body>
+    <!-- 页面内容容器 -->
+    <div class="page-container">
+        <div class="header">
+            <h1>我的网站工具游戏集</h1>
+            <p>精心打造的实用工具，好玩的游戏，助力您的工作效率和摸鱼效率</p>
+        </div>
+
+        <!-- 工具集部分 -->
+        <div class="section">
+            <h2 class="section-title">实用工具集</h2>
+            <div class="tools-container">
+                <div class="tool-card"><div class="tool-icon"><i class="fas fa-calculator"></i></div><div class="tool-name">中国亲戚关系计算器</div><div class="tool-desc">轻松搞定亲戚关系</div><a href="https://www.xhily.com/tools/who/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-image"></i></div><div class="tool-name">每日bing图</div><div class="tool-desc">保持高质量每日壁纸</div><a href="https://www.xhily.com/tools/bing/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-newspaper"></i></div><div class="tool-name">今日热榜</div><div class="tool-desc">汇集了各大网站的热榜信息</div><a href="https://hot.xhily.com/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-rss"></i></div><div class="tool-name">热门新闻</div><div class="tool-desc">优雅地阅读实时热门新闻</div><a href="https://news.xhily.com/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-fire-flame-curved"></i></div><div class="tool-name">热榜新闻</div><div class="tool-desc">汇聚全网热点，热门尽览无余</div><a href="https://rb.xhily.com/#/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-brands fa-chrome"></i></div><div class="tool-name">浏览器检测</div><div class="tool-desc">显示你的浏览器信息</div><a href="https://www.xhily.com/tools/browser/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-podcast"></i></div><div class="tool-name">音乐解锁</div><div class="tool-desc">移除已购音乐的加密保护</div><a href="https://www.xhily.com/tools/fkmusic/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-music"></i></div><div class="tool-name">网易云新版</div><div class="tool-desc">第三方网易云版本</div><a href="https://music.xhily.com/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-music"></i></div><div class="tool-name">网易云新版</div><div class="tool-desc">第三方网易云版本</div><a href="https://player.xhily.com/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-location-dot"></i></div><div class="tool-name">中国行政区划数据</div><div class="tool-desc">行政区划代码</div><a href="https://www.xhily.com/tools/data_location/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-fire-flame-curved"></i></div><div class="tool-name">暖手宝</div><div class="tool-desc">一键加热</div><a href="https://www.xhily.com/tools/nuan/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-video"></i></div><div class="tool-name">影视大全</div><div class="tool-desc">设有密码，暂时个人使用</div><a href="https://v.xuehao.de/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-brands fa-linux"></i></div><div class="tool-name">Linux命令搜索引擎</div><div class="tool-desc">共搜集到 608 个Linux命令</div><a href="https://linux.xhily.com/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-file"></i></div><div class="tool-name">Ai简历</div><div class="tool-desc">简历制作</div><a href="https://jianli.xhily.com/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-comment-nodes"></i></div><div class="tool-name">辟谣报告汇总</div><div class="tool-desc">数据源于微信公众平台运营中心</div><a href="https://piyao.xhily.com/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-hourglass-start"></i></div><div class="tool-name">塔罗牌占卜</div><div class="tool-desc">開始你的塔羅占卜之旅</div><a href="https://zhanbu.xhily.com/" class="tool-btn" target="_blank">立即使用</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-location-dot"></i></div><div class="tool-name">位置定位</div><div class="tool-desc">位置信息查询</div><a href="https://www.xhily.com/tools/local/" class="tool-btn" target="_blank">立即使用</a></div>            </div>
+        </div>
+
+        <!-- 游戏集部分 -->
+        <div class="section">
+            <h2 class="section-title">休闲游戏集</h2>
+            <div class="tools-container">
+                <div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-gamepad"></i></div><div class="tool-name">我的放置仙途</div><div class="tool-desc">轻松放置类修仙游戏</div><a href="https://xx.xhily.com/#/" class="tool-btn" target="_blank">开始游戏</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-gamepad"></i></div><div class="tool-name">我的文字游戏全靠刷</div><div class="tool-desc">你的修仙之旅开始了。</div><a href="https://xiuxian.xhily.com/" class="tool-btn" target="_blank">开始游戏</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-gamepad"></i></div><div class="tool-name">A Dark Room</div><div class="tool-desc">文本冒险游戏。</div><a href="https://www.xhily.com/game/room/" class="tool-btn" target="_blank">开始游戏</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-gamepad"></i></div><div class="tool-name">进化</div><div class="tool-desc">进化是一款网页游戏。</div><a href="https://evolve.xhily.com/" class="tool-btn" target="_blank">开始游戏</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-gamepad"></i></div><div class="tool-name">FC游戏</div><div class="tool-desc">进化是一款网页游戏。</div><a href="https://www.xhily.com/game/fcgame/" class="tool-btn" target="_blank">开始游戏</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-gamepad"></i></div><div class="tool-name">一个都不能死</div><div class="tool-desc">一个都不能死。</div><a href="https://www.xhily.com/game/nodead/" class="tool-btn" target="_blank">开始游戏</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-gamepad"></i></div><div class="tool-name">fc小游戏合集</div><div class="tool-desc">在线fc游戏。</div><a href="https://www.xhily.com/game/fc/" class="tool-btn" target="_blank">开始游戏</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-gamepad"></i></div><div class="tool-name">我的荒野放置求生记</div><div class="tool-desc">生存模拟游戏</div><a href="https://saga.xhily.com/" class="tool-btn" target="_blank">开始游戏</a></div><div class="tool-card"><div class="tool-icon"><i class="fas fa-solid fa-cash-register"></i></div><div class="tool-name">在线24点</div><div class="tool-desc">数学思维</div><a href="https://www.xhily.com/tools/24/" class="tool-btn" target="_blank">开始游戏</a></div>            </div>
+        </div>
+    </div>
+
+
+</body></html>
